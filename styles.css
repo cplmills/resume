@@ -296,6 +296,19 @@ color: var(--text-main);
 white-space: nowrap;
 }
 
+.pill a {
+  display: block;              /* make the link fill the pill */
+  color: inherit;              /* use the pill text colour */
+  text-decoration: none;       /* remove underline */
+  padding: 3px 8px;            /* match the pill padding */
+  border-radius: 999px;        /* keep pill shape */
+}
+
+.pill a:hover {
+  color: var(--accent);
+  border-color: rgba(56, 189, 248, 0.7);
+}
+
 .pill--accent {
 border-color: rgba(56, 189, 248, 0.7);
 background: var(--accent-soft);
