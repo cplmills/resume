@@ -296,7 +296,7 @@ color: var(--text-main);
 white-space: nowrap;
 }
 
-.pill a {
+.pill--accent a {
   display: block;              /* make the link fill the pill */
   color: inherit;              /* use the pill text colour */
   text-decoration: none;       /* remove underline */
@@ -304,7 +304,7 @@ white-space: nowrap;
   border-radius: 999px;        /* keep pill shape */
 }
 
-.pill a:hover {
+.pill--accent a:hover {
   color: var(--accent);
   border-color: rgba(56, 189, 248, 0.7);
 }
