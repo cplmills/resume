@@ -55,6 +55,8 @@ box-shadow: 0 24px 60px rgba(15, 23, 42, 0.85),
 padding: 28px 32px 32px;
 position: relative;
 overflow: hidden;
+margin-left: auto;
+margin-right: auto;
 }
 
 .resume::before {
@@ -78,13 +80,18 @@ position: relative;
 z-index: 1;
 }
 
-header {
+/* header {
 display: flex;
 justify-content: space-between;
 gap: 24px;
 padding-bottom: 24px;
 border-bottom: 1px solid rgba(148, 163, 184, 0.35);
 margin-bottom: 24px;
+} */
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
 .identity {
@@ -296,12 +303,9 @@ aside {
     white-space: nowrap;
 }
 
-.pill--accent a {
-  display: block;              /* make the link fill the pill */
+.pill a {
   color: inherit;              /* use the pill text colour */
   text-decoration: none;       /* remove underline */
-  padding: 3px 8px;            /* match the pill padding */
-  border-radius: 999px;        /* keep pill shape */
 }
 
 .pill--accent a:hover {
